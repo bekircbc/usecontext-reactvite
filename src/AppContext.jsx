@@ -3,9 +3,15 @@ import { createContext } from "react";
 export const AppContext = createContext();
 
 export const AppProvider = ({ children }) => {
-  const companyName = "Hamburg Robotics";
+  const companyName = "Hamburg Robotics GmbH";
 
   return (
-    <AppContextProvider value={{ companyName }}>{children}</AppContextProvider>
+    <AppContext.Provider
+      value={{
+        companyName,
+      }}
+    >
+      {children}
+    </AppContext.Provider>
   );
 };
