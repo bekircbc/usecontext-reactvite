@@ -10,8 +10,11 @@ function App() {
         <img src="images/icon.png" alt="logo" />
         <h1>Use Context React Vite</h1>
       </div>
+      <hr />
       <Customers />
+      <hr />
       <Employees />
+      <hr />
     </div>
   );
 }
